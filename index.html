@@ -111,7 +111,7 @@ async function fetchNews(loadMore = false) {
     } else {
       // fallback ke artikel lokal jika NewsAPI tidak menampilkan hasil
       renderNews(localArticles);
-      statusMsg.innerHTML = "Menampilkan berita lokal (fallback).";
+      statusMsg.innerHTML = "Menampilkan berita dalam Negeri.";
     }
   } catch (err) {
     console.error(err);
@@ -187,3 +187,4 @@ fetchNews();
 </script>
 </body>
 </html>
+
