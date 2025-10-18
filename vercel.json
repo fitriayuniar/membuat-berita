@@ -1,5 +1,8 @@
 {
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    {
+      "source": "/v2/top-headlines",
+      "destination": "/api/news"
+    }
   ]
 }
