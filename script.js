@@ -51,7 +51,7 @@ async function fetchNews(loadMore = false) {
       statusMsg.style.display = "none";
       if (data.articles.length >= 12) loadMoreBtn.style.display = "block";
     } else {
-      statusMsg.innerHTML = "Tidak ada berita ditemukan 😢 Menampilkan berita lokal.";
+      statusMsg.innerHTML = "Berita Menampilkan berita lokal.";
       renderNews(localArticles);
     }
   } catch (err) {
@@ -118,3 +118,4 @@ const localArticles = [
 
 // === AUTO LOAD ===
 fetchNews();
+
